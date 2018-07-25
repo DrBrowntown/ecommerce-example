@@ -11,17 +11,18 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   
-  <span onclick="changeImage('assets/product-large-b.jpg')">Contact</span>
-  <span onclick="changeImage('assets/product-large-c.jpg')">Address Card</span>
-  <span onclick="changeImage('assets/product-large-d.jpg')">Clock</span>
   <img id="imgDisp" src="assets/product-large-a.jpg" />
+  <img src="assets/product-small-a.jpg" onclick="changeImage('assets/product-large-a.jpg')"/>
+  <img src="assets/product-small-b.jpg" onclick="changeImage('assets/product-large-b.jpg')"/>
+  <img src="assets/product-small-c.jpg" onclick="changeImage('assets/product-large-c.jpg')"/>
+  <img src="assets/product-small-d.jpg" onclick="changeImage('assets/product-large-d.jpg')"/>
+  
 
   <script>
   function changeImage(imgName)
