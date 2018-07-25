@@ -1,0 +1,102 @@
+.grid > * {
+  padding: 5px;  
+  margin: 0;
+  grid-template-columns: 1fr; 
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+    "header"
+    "imageport"
+
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Quattrocento', serif;
+}
+
+.header {
+  display: grid;
+  grid-area: header;
+  position: fixed;
+  width: 100%;  
+  justify-content: center; 
+  align-content: : center; 
+  min-height: 70px;
+  padding: 0;
+  align-content: space-evenly;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 30px;
+  grid-template-areas:    
+    "hname"
+    "hsubname"
+}
+
+.hname {
+    grid-area: hname;
+    justify-self: center; 
+    align-self: center; 
+    font-size: 44px;    
+    max-width: 250px;
+    border-bottom: 1px solid black;
+}
+
+.hsubname {   
+  grid-area: hsubname;
+  font-size: 24px;
+}
+
+.imageport {
+    display: grid;
+    grid-area: imageport;
+    width: 100%;
+        
+    padding: 0;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "largeimage"
+        "smallimage"
+}
+
+.largeimage {
+    grid-area: largeimage;
+    display: grid;
+    width: 100%;    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "hero"
+}
+
+.hero {
+  grid-area: hero;
+
+  width: 100%;
+  height: auto;
+  
+}
+
+.smallimage {
+    grid-area: smallimage;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "icona iconb iconc icond"
+}
+
+.icona {
+  grid-area: icona;
+}
+.iconb {
+  grid-area: iconb;
+}
+.iconc {
+  grid-area: iconc;
+}
+.icond {
+  grid-area: icond;
+}

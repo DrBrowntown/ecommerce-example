@@ -16,14 +16,23 @@
 </head>
 
 <body>
-  
-  <img id="imgDisp" src="assets/product-large-a.jpg" />
-  <img src="assets/product-small-a.jpg" onclick="changeImage('assets/product-large-a.jpg')"/>
-  <img src="assets/product-small-b.jpg" onclick="changeImage('assets/product-large-b.jpg')"/>
-  <img src="assets/product-small-c.jpg" onclick="changeImage('assets/product-large-c.jpg')"/>
-  <img src="assets/product-small-d.jpg" onclick="changeImage('assets/product-large-d.jpg')"/>
-  
-
+  <div class="grid">
+    <div class="header">
+      <div class="hname">WILLIAMS SONOMA</div>
+      <div class="hsubname">CALIFORNIA</div>
+    </div>
+    <div class="imageport">
+      <div class="largeimage">
+        <img class="hero" id="imgDisp" src="assets/product-large-a.jpg" />
+      </div>
+      <div class="smallimage">
+        <img class="icona" src="assets/product-small-a.jpg" onclick="changeImage('assets/product-large-a.jpg')"/>
+        <img class="iconb" src="assets/product-small-b.jpg" onclick="changeImage('assets/product-large-b.jpg')"/>
+        <img class="iconc" src="assets/product-small-c.jpg" onclick="changeImage('assets/product-large-c.jpg')"/>
+        <img class="icond" src="assets/product-small-d.jpg" onclick="changeImage('assets/product-large-d.jpg')"/>
+      </div>
+    </div>
+  </div>
   <script>
   function changeImage(imgName)
   {
@@ -31,18 +40,10 @@
   image.src = imgName;
   }
   </script>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
+  
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  
 </body>
 
 </html>
