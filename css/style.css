@@ -3,13 +3,23 @@
   padding: 5px;  
   margin: 0;
   grid-template-columns: 1fr; 
-  grid-template-rows:150px 1fr;
+  grid-template-rows: 150px 1fr;
   grid-template-areas:
     "header"
     "imageport"
 
 }
 
+
+/*  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 150px 100px 75px 1fr 100px;
+  grid-template-areas:
+    "header header"
+    "navigation navigation"
+    "link link"
+    "imageport details"
+    "footer footer"
+*/
 body {
   margin: 0;
   text-align: center;  
@@ -43,7 +53,8 @@ body {
 
 .hsubname {   
   grid-area: hsubname;
-  font-size: 24px;
+  font-size: 20px;
+  font-family: arial;
 }
 
 .imageport {
