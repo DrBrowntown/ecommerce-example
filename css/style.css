@@ -3,7 +3,7 @@
   padding: 5px;  
   margin: 0;
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 120px 40px 75px 750px auto;
+  grid-template-rows: 120px 40px 75px 750px 50px;
   grid-template-areas:
     "header header"
     "nav nav"
@@ -21,8 +21,7 @@ body {
 .header {
   display: grid;
   grid-area: header;
-  margin-bottom: 10px;
-  width: 100%;   
+  margin-bottom: 10px;     
   min-height: 70px;
   padding: 0;
   align-content: space-evenly;
@@ -49,6 +48,7 @@ body {
 
 .nav, .link, .footer {
   justify-content: left;
+  
 }
 
 .nav {
@@ -92,6 +92,21 @@ body {
 
 .details {
   grid-area: details;
+  padding: 65px;
+  text-align: left;
+ 
+  padding-top: 1px;
+}
+
+.details p, li {
+  font-family: arial; 
+  font-size: 17px;
+}
+
+.price {
+  font-family: arial;
+ 
+  font-weight: bold;
 }
 /*.largeimage {
     grid-area: largeimage;
@@ -144,4 +159,9 @@ body {
 */
 .footer {
   grid-area: footer;
+  background: lightgrey;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  font-family: arial;
+  font-size: 10px;
 }
