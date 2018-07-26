@@ -3,7 +3,7 @@
   padding: 5px;  
   margin: 0;
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 120px 50px 75px 750px 75px;
+  grid-template-rows: 120px 40px 75px 750px 75px;
   grid-template-areas:
     "header header"
     "nav nav"
@@ -51,12 +51,24 @@ body {
 
 .nav {
   grid-area: nav;
+  color: white; 
+  background: #262e3a;
+  font-family: arial;
+  font-size: 15px;  
+  font-weight: 525;
+  padding: 7px;
+  margin-top: 10px;
+  justify-content: left;
+  text-transform: uppercase;
   display: grid;
+  column-gap: 25px;
+  grid-template-columns: repeat(10, auto); 
 }
 
 .link {
   grid-area: link;
   display: grid;
+
 }
 
 .imageport {
