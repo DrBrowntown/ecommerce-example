@@ -67,9 +67,22 @@
           <li>Machine-wash.</li>
         </ul>
         <div class="price">$19.95</div>
-        <input type="number" name="quantity" min="1" max="9">
-        <br>
-        <img class="addtocart" src="assets/button-add-to-cart.png"/>
+        
+        <form>
+          <input type="number" name="quantity" min="1" max="9">
+          <br>
+          <input type="button" id="myBtn" class="addtocart" style="background: url(assets/button-add-to-cart.png)">
+        </form>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div>
         <div class="detailinfo">
           <details>
             <summary></summary>
