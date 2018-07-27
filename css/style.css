@@ -3,7 +3,7 @@
   padding: 5px;  
   margin: 0;
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 120px 40px 75px 750px 50px;
+  grid-template-rows: 120px 40px 40px auto 50px;
   grid-template-areas:
     "header header"
     "nav nav"
@@ -78,7 +78,7 @@ body {
 }
 
 .imageport {
-    display: grid;
+  
     grid-area: imageport;           
     padding: 0; 
     justify-self: center;   
@@ -92,21 +92,48 @@ body {
 
 .details {
   grid-area: details;
-  padding: 65px;
+  padding: 100px;
   text-align: left;
- 
+  display: grid;
   padding-top: 1px;
+
 }
 
 .details p, li {
   font-family: arial; 
   font-size: 17px;
 }
+ 
+.details input {
+  text-align: center;
+}
 
+.detailinfo {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; 
+  
+}
 .price {
   font-family: arial;
- 
+  margin-bottom: 10px;
   font-weight: bold;
+}
+
+input {
+  width: 75px;
+  height: 35px;
+}
+
+.addtocart {
+  margin-top: 10px;
+}
+
+summary {
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 /*.largeimage {
     grid-area: largeimage;
@@ -164,4 +191,6 @@ body {
   padding-top: 15px;
   font-family: arial;
   font-size: 10px;
+  width: 100%;
+
 }
