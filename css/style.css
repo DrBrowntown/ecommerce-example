@@ -130,13 +130,13 @@ body {
 .imageport {
     
     grid-area: imageport;           
-    /*padding: 0; 
+    padding: 0; 
     justify-self: center;   
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "largeimage"
-        "smallimage"*/
+        "smallimage"
 }
 
 .box:hover {
@@ -276,7 +276,9 @@ summary {
 
 @media screen and (max-width: 1050px) {
   .grid {
+
     grid-template-columns: 1fr;
+    grid-template-rows: 120px auto 40px auto auto;
     grid-template-areas: 
       "header"
       "nav"
@@ -286,11 +288,30 @@ summary {
       "footer"
   }
 
+  .nav {
+
+  grid-template-rows: repeat(11, auto);
+  grid-template-columns: 250px;
+  grid-template-areas: 
+    "navi1"
+    "navi2"
+    "navi3"
+    "navi4"
+    "navi5"
+    "navi6"
+    "navi7"
+    "navi8"
+    "navi9"
+    "navi10"
+    "home"
+   
+  }
+
 }
 
 
 
-/*.largeimage {
+.largeimage {
     grid-area: largeimage;
     display: grid;
     width: 100%;
@@ -299,8 +320,8 @@ summary {
     grid-template-areas: 
       "hero"
 }
-*/
-/*.hero {
+
+.hero {
   grid-area: hero;
   width: auto;
   height: auto;
@@ -308,9 +329,9 @@ summary {
   
   
   
-}*/
+}
 
-/*.smallimage {
+.smallimage {
     grid-area: smallimage;
     display: grid;
     grid-gap: 2px;
@@ -318,15 +339,15 @@ summary {
     grid-template-rows: 1fr;
     grid-template-areas: 
       ". icona iconb iconc icond ."
-}*/
+}
 
-/*.icona, .iconb, .iconc, .icond {
+.icona, .iconb, .iconc, .icond {
   
-} */
+} 
 
 
 
-/*.icona {
+.icona {
   grid-area: icona;
 }
 .iconb {
@@ -338,4 +359,4 @@ summary {
 .icond {
   grid-area: icond;
 }
-*/
+
