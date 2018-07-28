@@ -291,7 +291,7 @@ summary {
   .nav {
 
   grid-template-rows: repeat(11, auto);
-  grid-template-columns: 250px;
+  grid-template-columns: auto;
   grid-template-areas: 
     "navi1"
     "navi2"
@@ -305,6 +305,30 @@ summary {
     "navi10"
     "home"
    
+  }
+
+  .details {
+    padding: 0;
+    width: 50%;
+  }
+  .nav {
+    justify-content: center;
+    font-size: 24px;
+    display: none;
+
+  }
+  .home {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .navi1, .navi2, .navi3, .navi4, .navi5, .navi6, .navi7, .navi8, .navi9, .navi10 {
+ 
+  margin-bottom: 2px;
+  padding-top: 0;
+
+  }
+  .link {
+    justify-content: center;
   }
 
 }
