@@ -54,7 +54,7 @@ body {
 .nav {
   grid-area: nav;
   color: white;  
-  font-family: Lato, Arial;
+  font-family: Flama, Arial;
   font-size: 13px;  
   font-weight: 500;
   padding: 7px;
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   display: grid;  
   grid-template-columns: repeat(11, auto);
-  grid-template-rows: 30px;
+  grid-template-rows: 32px;
   grid-template-areas: 
     "navi1 navi2 navi3 navi4 navi5 navi6 navi7 navi8 navi9 navi10 home"
 
@@ -71,7 +71,7 @@ body {
 
 .navi1, .navi2, .navi3, .navi4, .navi5, .navi6, .navi7, .navi8, .navi9, .navi10 {
   background: #262e3a;
-  padding-top: 7px;
+  padding-top: 9px;
 
 }
 
@@ -110,14 +110,14 @@ body {
 .home {
   background: #00245e;
   grid-area: home;
-  padding-top: 7px;
+  padding-top: 9px;
   margin-left: 2px;
 }
 
 .link {
   grid-area: link;
   margin-top: 10px;
-  font-family: Lato, Arial;
+  font-family: Flama, Arial;
   font-size: 13px;
   color: grey;
   display: grid;
@@ -127,18 +127,17 @@ body {
  
 }
 
-/*.imageport {
+.imageport {
     
     grid-area: imageport;           
-    padding: 0; 
+    /*padding: 0; 
     justify-self: center;   
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "largeimage"
-        "smallimage"
-}*/
-
+        "smallimage"*/
+}
 
 .box:hover {
   border: 1px solid black;
@@ -154,6 +153,7 @@ details[open] summary:after {
   
 }
 
+
 .details {
   grid-area: details;
   padding: 100px;
@@ -164,7 +164,7 @@ details[open] summary:after {
 }
 
 .details p, li {
-  font-family: Lato, Arial; 
+  font-family: Flama, Arial; 
   font-size: 17px;
 }
  
@@ -209,6 +209,87 @@ summary {
   border-bottom: solid grey 1px;
   border-top: solid grey 1px;
 }
+
+.footer {
+  grid-area: footer;
+  background: #f2f4f7;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  font-family: Lato, Arial;
+  font-size: 10px;
+  width: 100%;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1236px) {
+  .grid {
+    grid-template-columns: 1fr 618px 618px 1fr; 
+    grid-template-areas:
+      ". header header ."
+      ". nav nav ."
+      ". link link ."
+      ". imageport details ."
+      "footer footer footer footer"
+
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "link"
+      "imageport"
+      "details"
+      "footer"
+  }
+
+}
+
+
+
 /*.largeimage {
     grid-area: largeimage;
     display: grid;
@@ -258,51 +339,3 @@ summary {
   grid-area: icond;
 }
 */
-.footer {
-  grid-area: footer;
-  background: #f2f4f7;
-  border-top: 1px solid black;
-  padding-top: 15px;
-  font-family: Lato, Arial;
-  font-size: 10px;
-  width: 100%;
-
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
