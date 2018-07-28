@@ -1,3 +1,5 @@
+
+// Change hero image depending on thumbnail clicked
 function changeImage(imgName)
   {
   image = document.getElementById('imgDisp');
