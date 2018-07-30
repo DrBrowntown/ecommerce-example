@@ -24,7 +24,7 @@ body {
   margin-bottom: 10px;     
   min-height: 70px;
   padding: 0;
-  align-content: space-evenly;
+
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:    
@@ -153,19 +153,16 @@ details[open] summary:after {
   
 }
 
-details[open] summary ~ * {
+details[open], .summarytext {
   animation-name: invisiblyGrowFontSize, fadeIn;
   animation-duration: 500ms, 200ms;
   animation-delay: 0ms, 500ms;
 }
 
-.contents {
-  transition: height 1s ease;
-}
 
 @keyframes sweep {
-  0%    {opacity: 0; margin-left: 0px}
-  100%  {opacity: 1; margin-left: 0px}
+  0%    {opacity: 0; margin-left: 0}
+  100%  {opacity: 1; margin-left: 0}
 }
 
 @keyframes invisiblyGrowFontSize {
@@ -341,13 +338,13 @@ summary {
     "home"
    
   }
-
-  .imageport {
-
-  }
+  
   .details {
     padding: 10px;
+  }
 
+  input {
+    margin-left: 5px;
   }
   .nav {
     justify-content: center;
@@ -373,56 +370,3 @@ summary {
   }
 
 }
-
-
-/*
-.largeimage {
-    grid-area: largeimage;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-      "hero"
-}
-
-.hero {
-  grid-area: hero;
-  width: auto;
-  height: auto;
-  justify-self: center;
-  
-  
-  
-}
-
-.smallimage {
-    grid-area: smallimage;
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: 1fr auto auto auto auto 1fr; 
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-      ". icona iconb iconc icond ."
-}
-
-.icona, .iconb, .iconc, .icond {
-  
-} 
-
-
-
-.icona {
-  grid-area: icona;
-}
-.iconb {
-  grid-area: iconb;
-}
-.iconc {
-  grid-area: iconc;
-}
-.icond {
-  grid-area: icond;
-}
-
-*/
