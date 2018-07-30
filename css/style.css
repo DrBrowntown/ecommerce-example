@@ -153,6 +153,41 @@ details[open] summary:after {
   
 }
 
+details[open] summary ~ * {
+  animation-name: invisiblyGrowFontSize, fadeIn;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
+}
+
+.contents {
+  transition: height 1s ease;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: 0px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .details {
   grid-area: details;
@@ -241,7 +276,7 @@ summary {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -307,14 +342,17 @@ summary {
    
   }
 
+  .imageport {
+
+  }
   .details {
-    padding: 0;
-    width: 50%;
+    padding: 10px;
+
   }
   .nav {
     justify-content: center;
     font-size: 24px;
-    display: none;
+   /* display: none;*/
 
   }
   .home {
@@ -330,11 +368,14 @@ summary {
   .link {
     justify-content: center;
   }
+  .footer {
+    margin-top: 15px;
+  }
 
 }
 
 
-
+/*
 .largeimage {
     grid-area: largeimage;
     display: grid;
@@ -384,3 +425,4 @@ summary {
   grid-area: icond;
 }
 
+*/
