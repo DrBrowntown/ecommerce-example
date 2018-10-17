@@ -5,8 +5,7 @@ Live version:
 (https://drbrowntown.github.io/ecommerce-example/)
 
 ## Instructions
-To run this site on your local machine: 
-    * Download and extract the folder contents.
+    * Download and extract the folder contents to your local machine.
     * Click on index.html to open in browser.
 
 ## Features:
